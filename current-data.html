@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- DEVICE -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- ICON -->
+    <link href="ocm.ico" rel="icon">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!--Leaflet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script> -->
+
+    <script src="bootstrap.min.js"></script>
+
+    <!--Leaflet JAVASCRIPT-->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+        integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="mg.css">
+
+    <title>
+        Dezaka
+    </title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark fixed-top navbar-expand-lg bg-dark">
+        <a class="navbar-brand" href="index.html">
+            Dezaka <small class="badge badge-warning"> BETA </small>
+        </a>
+        <button class="navbar-toggler" type="button" href="#" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="current-data.html">Current Data</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" name="search" type="search" id="search"
+                    placeholder="Search for a Region..." aria-label="Search">
+            </form>
+        </div>
+    </nav>
+
+    <div id="mapid"></div>
+
+    <script src="data.js"></script>
+    <script src="dezaka.js"></script>
+
+</body>
+
+</html>

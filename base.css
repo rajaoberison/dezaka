@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+body {
+  /* max-width: 100%; */
+  font-family: "Quicksand";
+  margin-top: 8vh !important;
+  background-color: #000;
+  font-size: initial;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+.left,
+.right {
+  width: 25%;
+  /* overflow: scroll; */
+  max-height: 88vh;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navbar-brand {
+  color: yellowgreen !important;
+}
+.nav-link {
+  color: whitesmoke !important;
+}
+.navbar-brand:hover,
+.nav-link:hover {
+  color: initial !important;
+  font-weight: bold !important;
+}
+
+input[type="search"] {
+  background: transparent;
+  -webkit-transition: width 0.2s;
+  -moz-transition: width 0.2s;
+  transition: width 0.2s;
+}
+
+input[type="search"]:hover {
+  border-color: #9999ff;
+
+  -webkit-box-shadow: 0 0 5px #9999ff;
+  -moz-box-shadow: 0 0 5px #9999ff;
+  box-shadow: 0 0 5px #9999ff;
+}
+
+input[type="search"]:focus {
+  position: relative;
+  right: 0;
+  width: 65vw;
+  background-color: #000;
+  border-color: #9999ff;
+
+  -webkit-box-shadow: 0 0 5px #9999ff;
+  -moz-box-shadow: 0 0 5px #9999ff;
+  box-shadow: 0 0 5px#9999FF;
+}
+
+.hidden {
+  font-weight: 0.2rem !important;
+  font-size: 1vw;
+  /* margin-left:auto;
+  margin-right:0; */
+
+  position: fixed;
+  z-index: 9999999;
+  left: 67% !important;
+  /* top: 2.5em; */
+  background: transparent;
+  /* z-index: 2; */
+}
